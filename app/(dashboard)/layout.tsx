@@ -19,6 +19,9 @@ export default function DashboardLayout({
             <Link href="/invoices" className="hover:text-foreground">
               Invoices
             </Link>
+            <Link href="/reminders" className="hover:text-foreground">
+              Reminders
+            </Link>
           </div>
         </nav>
       </header>
