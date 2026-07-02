@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { clients } from "@/lib/mock-data";
+import { createClient } from "@/lib/supabase/server";
 import { Client } from "@/types/client";
 
-// The `?state=` query param lets the course demo show each UI state without a
-// backend: loading (skeleton), empty (no rows yet), error (fetch failed).
-// The default renders the mock data table.
+// The `?state=` query param forces a UI state for the course demo/screenshots:
+// loading (skeleton), empty, or error. Without it, the page renders live,
+// per-user data from Supabase (RLS scopes rows to the signed-in user).
 type State = "loading" | "empty" | "error" | "default";
 
 function parseState(value: string | undefined): State {
@@ -18,7 +18,20 @@ export default async function ClientsPage({
   searchParams: Promise<{ state?: string }>;
 }) {
   const { state: rawState } = await searchParams;
-  const state = parseState(rawState);
+  const forced = parseState(rawState);
+
+  let clients: Client[] = [];
+  let loadError = false;
+
+  if (forced === "default") {
+    const supabase = await createClient();
+    const { data, error } = await supabase
+      .from("clients")
+      .select("id, name, email")
+      .order("created_at", { ascending: true });
+    if (error) loadError = true;
+    else clients = data ?? [];
+  }
 
   return (
     <div>
@@ -32,10 +45,11 @@ export default async function ClientsPage({
         </Link>
       </div>
 
-      {state === "loading" && <ClientsSkeleton />}
-      {state === "error" && <ClientsError />}
-      {state === "empty" && <ClientsEmpty />}
-      {state === "default" && <ClientsTable clients={clients} />}
+      {forced === "loading" && <ClientsSkeleton />}
+      {forced === "empty" && <ClientsEmpty />}
+      {forced === "error" && <ClientsError />}
+      {forced === "default" &&
+        (loadError ? <ClientsError /> : <ClientsTable clients={clients} />)}
     </div>
   );
 }

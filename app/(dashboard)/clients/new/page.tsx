@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useTransition } from "react";
+import { createClientAction } from "../actions";
 
 type Errors = { name?: string; email?: string };
 
@@ -11,7 +12,8 @@ export default function NewClientPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState<Errors>({});
-  const [saved, setSaved] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
+  const [pending, startTransition] = useTransition();
 
   function validate(): Errors {
     const next: Errors = {};
@@ -26,33 +28,22 @@ export default function NewClientPage() {
     const next = validate();
     setErrors(next);
     if (Object.keys(next).length > 0) return;
-    // Mock persistence — Module 6 wires this to Supabase.
-    setSaved(true);
-  }
-
-  if (saved) {
-    return (
-      <div>
-        <h1 className="mb-4 text-2xl font-semibold tracking-tight">New client</h1>
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6 dark:border-green-900/50 dark:bg-green-950/30">
-          <p className="text-sm text-green-700 dark:text-green-300">
-            Saved <strong>{name}</strong> ({email}). In this local build the data
-            isn’t persisted yet — Module 6 connects Supabase.
-          </p>
-          <Link
-            href="/clients"
-            className="mt-4 inline-block text-sm font-medium underline"
-          >
-            Back to clients
-          </Link>
-        </div>
-      </div>
-    );
+    setServerError(null);
+    // On success the action redirects to /clients; only errors return here.
+    startTransition(async () => {
+      const result = await createClientAction({ name, email });
+      if (result?.error) setServerError(result.error);
+    });
   }
 
   return (
     <div>
       <h1 className="mb-6 text-2xl font-semibold tracking-tight">New client</h1>
+      {serverError && (
+        <div className="mb-4 max-w-md rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700 dark:border-red-900/50 dark:bg-red-950/30 dark:text-red-300">
+          {serverError}
+        </div>
+      )}
       <form onSubmit={handleSubmit} noValidate className="max-w-md space-y-5">
         <Field label="Name" error={errors.name}>
           <input
@@ -77,9 +68,10 @@ export default function NewClientPage() {
         <div className="flex items-center gap-3">
           <button
             type="submit"
-            className="rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background hover:opacity-90"
+            disabled={pending}
+            className="rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background hover:opacity-90 disabled:opacity-50"
           >
-            Save client
+            {pending ? "Saving…" : "Save client"}
           </button>
           <Link href="/clients" className="text-sm text-gray-500 hover:text-foreground">
             Cancel

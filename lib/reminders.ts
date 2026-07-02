@@ -39,11 +39,18 @@ export function draftReminder(invoice: Invoice, client: Client): ReminderDraft {
   };
 }
 
-/** Build the full approval queue: one draft per overdue invoice. */
-export function buildReminderQueue(all: Invoice[] = invoices): ReminderDraft[] {
+/**
+ * Build the full approval queue: one draft per overdue invoice.
+ * `resolveClient` defaults to the mock lookup (used by tests); the live
+ * reminders page passes a resolver built from Supabase-fetched clients.
+ */
+export function buildReminderQueue(
+  all: Invoice[] = invoices,
+  resolveClient: (id: string) => Client | undefined = getClient,
+): ReminderDraft[] {
   return getOverdueInvoices(all)
     .map((inv) => {
-      const client = getClient(inv.clientId);
+      const client = resolveClient(inv.clientId);
       return client ? draftReminder(inv, client) : null;
     })
     .filter((d): d is ReminderDraft => d !== null);

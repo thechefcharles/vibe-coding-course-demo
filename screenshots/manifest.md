@@ -21,8 +21,8 @@ captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
 | m05-claude-plan-mode.png | 5 | plan mode | manual | ⬜ |
 | m05-claude-permission.png | 5 | permission prompt | manual | ⬜ |
 | m05-claude-multifile-diff.png | 5 | multi-file diff | manual | ⬜ |
-| m06-01-signed-out.png | 6 | app signed-out view | auto (after Supabase) | ⬜ |
-| m06-02-signed-in-clients.png | 6 | app signed-in /clients (live data) | auto (after Supabase) | ⬜ |
+| m06/m06-01-signed-out.png | 6 | app signed-out view (login page) | auto | ✅ |
+| m06/m06-02-signed-in-clients.png | 6 | app signed-in /clients (live data) | auto | ✅ |
 | m06-supabase-api-keys.png | 6 | Supabase API keys | manual | ⬜ |
 | m06-supabase-table-editor.png | 6 | Supabase Table Editor | manual | ⬜ |
 | m06-supabase-auth-users.png | 6 | Supabase Auth users | manual | ⬜ |
