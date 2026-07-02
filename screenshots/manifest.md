@@ -27,10 +27,10 @@ captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
 | m06-supabase-table-editor.png | 6 | Supabase Table Editor | manual | ⬜ |
 | m06-supabase-auth-users.png | 6 | Supabase Auth users | manual | ⬜ |
 | m06-supabase-rls-policy.png | 6 | an RLS policy | manual | ⬜ |
-| m07-error-overlay.png | 7 | Next.js error overlay | manual | ⬜ |
+| m07/m07-01-error-overlay.png | 7 | Next.js dev error overlay | auto | ✅ |
 | m07-debugging-chat.png | 7 | a debugging chat | manual | ⬜ |
-| m08-github-repo.png | 8 | GitHub repo | manual | ⬜ |
-| m08-github-pr-diff.png | 8 | a pull request diff | manual | ⬜ |
+| m08/m08-01-github-repo.png | 8 | GitHub repo (public) | auto | ✅ |
+| m08/m08-02-pr-diff.png | 8 | PR #1 files-changed diff | auto | ✅ |
 | m08-merge-conflict.png | 8 | a merge conflict in the editor | manual | ⬜ |
 | m09/m09-01-live-clients.png | 9 | live /clients on the public Vercel URL | auto | ✅ |
 | m09-vercel-import.png | 9 | Vercel import screen | manual | ⬜ |
