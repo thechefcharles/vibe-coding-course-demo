@@ -57,7 +57,7 @@ Three capture tiers:
 | m13/m13-skill-install.png | 13 | SKILL.md / skill install | manual | ✅ |
 | m13/m13-plugin-install.png | 13 | `/plugin install` | manual | ✅ |
 | m13/m13-notion-checklist.png | 13 | a Notion feature-checklist page (Notion MCP) | manual | ⬜ |
-| m14/m14-architecture-summary.png | 14 | AI architecture summary + file tree of the brownfield repo | manual | ⬜ |
+| m14/m14-architecture-summary.png | 14 | AI architecture summary + file tree of the brownfield repo | manual | ✅ |
 
 **Bonus — Module 1–2 lesson figures (live AI session, not from the reference app):**
 `m01/m01-same-prompt-twice.png`, `m01/m01-hallucination.png`, `m02/m02-weak-vs-strong.png`, `m02/m02-refinement.png` — all manual.
