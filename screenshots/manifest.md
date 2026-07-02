@@ -33,9 +33,9 @@ captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
 | m08/m08-02-pr-diff.png | 8 | PR #1 files-changed diff | auto | ✅ |
 | m08-merge-conflict.png | 8 | a merge conflict in the editor | manual | ⬜ |
 | m09/m09-01-live-clients.png | 9 | live /clients on the public Vercel URL | auto | ✅ |
-| m09-vercel-import.png | 9 | Vercel import screen | browser-driven (deferred: Vercel login rate-limited) | ⬜ |
-| m09-vercel-env.png | 9 | Vercel env vars settings | browser-driven (deferred: Vercel login rate-limited) | ⬜ |
-| m09-vercel-preview-link.png | 9 | PR preview link | browser-driven (deferred: Vercel login rate-limited) | ⬜ |
+| m09/m09-vercel-import.png | 9 | Vercel import (New Project) screen | auto (browser-driven) | ✅ |
+| m09/m09-vercel-env.png | 9 | Vercel env vars settings | auto (browser-driven) | ✅ |
+| m09/m09-vercel-deployments.png | 9 | Vercel deployments / CI/CD history | auto (browser-driven) | ✅ |
 | m09-supabase-prod-auth-urls.png | 9 | Supabase prod auth URLs | manual | ⬜ |
 | m11/m11-01-loading.png | 11 | /clients?state=loading skeleton | auto | ✅ |
 | m11/m11-02-empty.png | 11 | /clients?state=empty friendly empty | auto | ✅ |
