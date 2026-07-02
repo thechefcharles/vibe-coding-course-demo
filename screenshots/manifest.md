@@ -40,8 +40,8 @@ captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
 | m11/m11-01-loading.png | 11 | /clients?state=loading skeleton | auto | ✅ |
 | m11/m11-02-empty.png | 11 | /clients?state=empty friendly empty | auto | ✅ |
 | m11/m11-03-error.png | 11 | /clients?state=error + retry | auto | ✅ |
-| m11/m11-04-tests.txt | 11 | test suite run output | manual (terminal) | ⬜ |
-| m10/m10-01-approval-queue.png | 10 | overdue-reminder human-approval queue | auto (after build) | ⬜ |
+| m11/m11-04-tests.txt | 11 | unit + E2E test run output | auto | ✅ |
+| m10/m10-01-approval-queue.png | 10 | overdue-reminder human-approval queue | auto | ✅ |
 | m12-mcp-list.png | 12 | `claude mcp list` | manual | ⬜ |
 | m12-skill-install.png | 12 | SKILL.md / skill install | manual | ⬜ |
 | m12-plugin-install.png | 12 | `/plugin install` | manual | ⬜ |

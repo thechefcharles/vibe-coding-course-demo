@@ -24,6 +24,7 @@ const shots = [
   { path: "m11/m11-01-loading.png", url: "/clients?state=loading", note: "Loading skeleton" },
   { path: "m11/m11-02-empty.png", url: "/clients?state=empty", note: "Empty state" },
   { path: "m11/m11-03-error.png", url: "/clients?state=error", note: "Error + retry" },
+  { path: "m10/m10-01-approval-queue.png", url: "/reminders", note: "Reminder approval queue" },
 ];
 
 const OUT = "screenshots";
