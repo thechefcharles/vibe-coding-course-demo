@@ -36,7 +36,7 @@ Three capture tiers:
 | m07/m07-supabase-auth-users.png | 7 | Supabase Auth users | auto (MCP) | ✅ |
 | m07/m07-supabase-rls-policy.png | 7 | RLS policies (clients + invoices) | auto (MCP) | ✅ |
 | m08/m08-01-error-overlay.png | 8 | Next.js dev error overlay | auto (MCP) | ✅ |
-| m08/m08-debugging-chat.png | 8 | a debugging chat (live AI session) | manual | ⬜ |
+| m08/m08-debugging-chat.png | 8 | a debugging chat (live AI session) | manual | ✅ |
 | m09/m09-01-github-repo.png | 9 | GitHub repo (public) | auto (MCP) | ✅ |
 | m09/m09-02-pr-diff.png | 9 | PR files-changed diff | auto (MCP) | ✅ |
 | m09/m09-merge-conflict.png | 9 | a merge conflict in the editor | manual | ✅ |
