@@ -39,7 +39,7 @@ Three capture tiers:
 | m08/m08-debugging-chat.png | 8 | a debugging chat (live AI session) | manual | ⬜ |
 | m09/m09-01-github-repo.png | 9 | GitHub repo (public) | auto (MCP) | ✅ |
 | m09/m09-02-pr-diff.png | 9 | PR files-changed diff | auto (MCP) | ✅ |
-| m09/m09-merge-conflict.png | 9 | a merge conflict in the editor | manual | ⬜ |
+| m09/m09-merge-conflict.png | 9 | a merge conflict in the editor | manual | ✅ |
 | m10/m10-01-live-clients.png | 10 | live /clients on the public Vercel URL | auto (MCP, prod) | ✅ |
 | m10/m10-vercel-import.png | 10 | Vercel import (New Project) screen | auto (MCP) | ✅ |
 | m10/m10-vercel-env.png | 10 | Vercel env vars settings | auto (MCP) | ✅ |
