@@ -1,4 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Invoice Tracker — course reference app
+
+The official reference solution for the AI-assisted coding course: a small
+invoice tracker built with **Next.js (App Router) + TypeScript + Tailwind**,
+**Supabase** (auth + Postgres with Row Level Security), and deployed on
+**Vercel**.
+
+- **Live demo:** https://vibe-coding-course-demo.vercel.app
+- **Features:** email/password auth, per-user clients & invoices (RLS-scoped),
+  loading/empty/error states, and an overdue-reminder approval queue with a
+  human-in-the-loop gate.
+- **Module checkpoints:** each course module is a git tag (`module-00-setup`
+  … `module-11-production`) so any stage can be checked out.
+
+Built as a Next.js project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
