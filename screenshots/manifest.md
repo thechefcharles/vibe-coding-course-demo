@@ -22,8 +22,8 @@ Three capture tiers:
 | m05/m05-claude-welcome.png | 5 | Claude Code welcome in terminal | manual | ✅ |
 | m05/m05-claude-plan-mode.png | 5 | plan mode showing a proposed plan | manual | ✅ |
 | m05/m05-claude-md.png | 5 | CLAUDE.md open in the editor | manual | ✅ |
-| m05/m05-claude-permission.png | 5 | permission (allow/deny) prompt | manual | ⬜ |
-| m05/m05-claude-multifile-diff.png | 5 | multi-file diff | manual | ⬜ |
+| m05/m05-claude-permission.png | 5 | permission (allow/deny) prompt | manual | ✅ |
+| m05/m05-claude-multifile-diff.png | 5 | multi-file diff | manual | ✅ |
 | m06/m06-01-clients-styled.png | 6 | styled /clients (desktop) | auto (Playwright) | ✅ |
 | m06/m06-02-clients-mobile.png | 6 | /clients at 375px (responsive) | auto (Playwright) | ✅ |
 | m06/m06-03-invoices-mobile.png | 6 | /invoices at 375px (responsive) | auto (Playwright) | ✅ |
@@ -54,8 +54,8 @@ Three capture tiers:
 | m12/m12-lighthouse.png | 12 | Lighthouse / axe panel | manual | ⬜ |
 | m13/m13-01-automated-pr-deploy.png | 13 | MCP-driven PR merged + auto-deploy | auto (MCP) | ✅ |
 | m13/m13-mcp-list.png | 13 | `claude mcp list` | manual | ✅ |
-| m13/m13-skill-install.png | 13 | SKILL.md / skill install | manual | ⬜ |
-| m13/m13-plugin-install.png | 13 | `/plugin install` | manual | ⬜ |
+| m13/m13-skill-install.png | 13 | SKILL.md / skill install | manual | ✅ |
+| m13/m13-plugin-install.png | 13 | `/plugin install` | manual | ✅ |
 | m13/m13-notion-checklist.png | 13 | a Notion feature-checklist page (Notion MCP) | manual | ⬜ |
 | m14/m14-architecture-summary.png | 14 | AI architecture summary + file tree of the brownfield repo | manual | ⬜ |
 

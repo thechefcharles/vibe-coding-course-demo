@@ -39,6 +39,9 @@ yarn-error.log*
 # claude "remember" plugin (session state, not app code)
 /.remember/
 
+# claude personal settings override (not team config)
+/.claude/settings.local.json
+
 # playwright
 /test-results/
 /playwright-report/
