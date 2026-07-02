@@ -1,49 +1,60 @@
-# Screenshot manifest
+# Screenshot manifest (v2 module numbering)
 
-App-UI shots are captured automatically with `node scripts/screenshots.mjs`
-(Playwright, chromium, 1280×800, fullPage). Tool/desktop/dashboard shots must be
-captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
+Three capture tiers:
+- **auto (Playwright)** — app UI on localhost, via `node scripts/screenshots.mjs` (signs in as a seeded demo user; desktop 1280×800 + a 375px mobile pass for Module 6).
+- **auto (MCP)** — logged-in dashboards, GitHub web, error overlay, MCP auto-deploy, captured with the chrome-devtools MCP.
+- **manual** — native desktop/terminal only (Cursor, Claude Code terminal, editor merge conflict, Lighthouse); see `MANUAL-TODO.md`.
 
-| filename | module | what it shows | auto/manual | done |
+| filename | module | what it shows | tier | done |
 |---|---|---|---|---|
-| m00/m00-01-nextjs-starter.png | 0 | Next.js starter page at localhost:3000 | auto | ✅ |
-| m00-cursor-welcome.png | 0 | Cursor welcome screen | manual | ⬜ |
-| m00-terminal-versions.png | 0 | terminal version checks (node/npm) | manual | ⬜ |
-| m04/m04-01-clients-table.png | 4 | /clients table (mock rows) | auto | ✅ |
-| m04/m04-02-create-form.png | 4 | /clients/new create form | auto | ✅ |
-| m04-cursor-cmdk-diff.png | 4 | Cursor Cmd+K inline diff | manual | ⬜ |
-| m04-cursor-at-mention.png | 4 | Cursor @-mention menu | manual | ⬜ |
-| m04-cursor-composer-diff.png | 4 | Cursor Composer multi-file diff | manual | ⬜ |
-| m05/m05-01-invoices-table.png | 5 | /invoices list (mock) | auto | ✅ |
-| m05/m05-02-invoice-form.png | 5 | /invoices/new form | auto | ✅ |
-| m05-claude-welcome.png | 5 | Claude Code welcome in terminal | manual | ⬜ |
-| m05-claude-md.png | 5 | CLAUDE.md | manual | ⬜ |
-| m05-claude-plan-mode.png | 5 | plan mode | manual | ⬜ |
-| m05-claude-permission.png | 5 | permission prompt | manual | ⬜ |
-| m05-claude-multifile-diff.png | 5 | multi-file diff | manual | ⬜ |
-| m06/m06-01-signed-out.png | 6 | app signed-out view (login page) | auto | ✅ |
-| m06/m06-02-signed-in-clients.png | 6 | app signed-in /clients (live data) | auto | ✅ |
-| m06/m06-supabase-api-keys.png | 6 | Supabase API keys | auto (browser-driven) | ✅ |
-| m06/m06-supabase-table-editor.png | 6 | Supabase Table Editor (clients rows) | auto (browser-driven) | ✅ |
-| m06/m06-supabase-auth-users.png | 6 | Supabase Auth users | auto (browser-driven) | ✅ |
-| m06/m06-supabase-rls-policy.png | 6 | RLS policies (clients + invoices) | auto (browser-driven) | ✅ |
-| m07/m07-01-error-overlay.png | 7 | Next.js dev error overlay | auto | ✅ |
-| m07-debugging-chat.png | 7 | a debugging chat | manual | ⬜ |
-| m08/m08-01-github-repo.png | 8 | GitHub repo (public) | auto | ✅ |
-| m08/m08-02-pr-diff.png | 8 | PR #1 files-changed diff | auto | ✅ |
-| m08-merge-conflict.png | 8 | a merge conflict in the editor | manual | ⬜ |
-| m09/m09-01-live-clients.png | 9 | live /clients on the public Vercel URL | auto | ✅ |
-| m09/m09-vercel-import.png | 9 | Vercel import (New Project) screen | auto (browser-driven) | ✅ |
-| m09/m09-vercel-env.png | 9 | Vercel env vars settings | auto (browser-driven) | ✅ |
-| m09/m09-vercel-deployments.png | 9 | Vercel deployments / CI/CD history | auto (browser-driven) | ✅ |
-| m09/m09-vercel-preview-link.png | 9 | PR #2 Vercel preview deployment link | auto (browser-driven) | ✅ |
-| m09/m09-supabase-prod-auth-urls.png | 9 | Supabase prod auth Site URL + redirects | auto (browser-driven) | ✅ |
-| m11/m11-01-loading.png | 11 | /clients?state=loading skeleton | auto | ✅ |
-| m11/m11-02-empty.png | 11 | /clients?state=empty friendly empty | auto | ✅ |
-| m11/m11-03-error.png | 11 | /clients?state=error + retry | auto | ✅ |
-| m11/m11-04-tests.txt | 11 | unit + E2E test run output | auto | ✅ |
-| m10/m10-01-approval-queue.png | 10 | overdue-reminder human-approval queue | auto | ✅ |
-| m12-mcp-list.png | 12 | `claude mcp list` | manual | ⬜ |
-| m12-skill-install.png | 12 | SKILL.md / skill install | manual | ⬜ |
-| m12-plugin-install.png | 12 | `/plugin install` | manual | ⬜ |
-| m12/m12-01-automated-pr-deploy.png | 12 | MCP-driven PR #3 merged + auto-deploy | auto (browser-driven) | ✅ |
+| m00/m00-01-nextjs-starter.png | 0 | Next.js starter at localhost:3000 | auto (Playwright) | ✅ |
+| m00/m00-terminal-versions.png | 0 | terminal version checks (node/npm/git) | manual | ✅ |
+| m00/m00-cursor-welcome.png | 0 | Cursor welcome screen | manual | ⬜ |
+| m04/m04-01-clients-table.png | 4 | /clients table (mock rows) | auto (Playwright) | ✅ |
+| m04/m04-02-create-form.png | 4 | /clients/new create form | auto (Playwright) | ✅ |
+| m04/m04-cursor-cmdk-diff.png | 4 | Cursor Cmd+K inline diff | manual | ⬜ |
+| m04/m04-cursor-at-mention.png | 4 | Cursor @-mention menu | manual | ⬜ |
+| m04/m04-cursor-composer-diff.png | 4 | Cursor Composer multi-file diff | manual | ⬜ |
+| m05/m05-01-invoices-table.png | 5 | /invoices list (mock) | auto (Playwright) | ✅ |
+| m05/m05-02-invoice-form.png | 5 | /invoices/new form | auto (Playwright) | ✅ |
+| m05/m05-claude-welcome.png | 5 | Claude Code welcome in terminal | manual | ✅ |
+| m05/m05-claude-plan-mode.png | 5 | plan mode showing a proposed plan | manual | ✅ |
+| m05/m05-claude-md.png | 5 | CLAUDE.md open in the editor | manual | ⬜ |
+| m05/m05-claude-permission.png | 5 | permission (allow/deny) prompt | manual | ⬜ |
+| m05/m05-claude-multifile-diff.png | 5 | multi-file diff | manual | ⬜ |
+| m06/m06-01-clients-styled.png | 6 | styled /clients (desktop) | auto (Playwright) | ✅ |
+| m06/m06-02-clients-mobile.png | 6 | /clients at 375px (responsive) | auto (Playwright) | ✅ |
+| m06/m06-03-invoices-mobile.png | 6 | /invoices at 375px (responsive) | auto (Playwright) | ✅ |
+| m07/m07-01-signed-out.png | 7 | app signed-out (login page) | auto (Playwright) | ✅ |
+| m07/m07-02-signed-in-clients.png | 7 | signed-in /clients (live data) | auto (Playwright) | ✅ |
+| m07/m07-supabase-api-keys.png | 7 | Supabase API keys | auto (MCP) | ✅ |
+| m07/m07-supabase-table-editor.png | 7 | Supabase Table Editor (clients rows) | auto (MCP) | ✅ |
+| m07/m07-supabase-auth-users.png | 7 | Supabase Auth users | auto (MCP) | ✅ |
+| m07/m07-supabase-rls-policy.png | 7 | RLS policies (clients + invoices) | auto (MCP) | ✅ |
+| m08/m08-01-error-overlay.png | 8 | Next.js dev error overlay | auto (MCP) | ✅ |
+| m08/m08-debugging-chat.png | 8 | a debugging chat (live AI session) | manual | ⬜ |
+| m09/m09-01-github-repo.png | 9 | GitHub repo (public) | auto (MCP) | ✅ |
+| m09/m09-02-pr-diff.png | 9 | PR files-changed diff | auto (MCP) | ✅ |
+| m09/m09-merge-conflict.png | 9 | a merge conflict in the editor | manual | ⬜ |
+| m10/m10-01-live-clients.png | 10 | live /clients on the public Vercel URL | auto (MCP, prod) | ✅ |
+| m10/m10-vercel-import.png | 10 | Vercel import (New Project) screen | auto (MCP) | ✅ |
+| m10/m10-vercel-env.png | 10 | Vercel env vars settings | auto (MCP) | ✅ |
+| m10/m10-vercel-deployments.png | 10 | Vercel deployments / CI-CD history | auto (MCP) | ✅ |
+| m10/m10-vercel-preview-link.png | 10 | PR Vercel preview deployment link | auto (MCP) | ✅ |
+| m10/m10-supabase-prod-auth-urls.png | 10 | Supabase prod Site URL + redirects | auto (MCP) | ✅ |
+| m11/m11-01-approval-queue.png | 11 | overdue-reminder human-approval queue | auto (Playwright) | ✅ |
+| m12/m12-01-loading.png | 12 | /clients?state=loading skeleton | auto (Playwright) | ✅ |
+| m12/m12-02-empty.png | 12 | /clients?state=empty | auto (Playwright) | ✅ |
+| m12/m12-03-error.png | 12 | /clients?state=error + retry | auto (Playwright) | ✅ |
+| m12/m12-04-tests.txt | 12 | unit + E2E test run output | auto | ✅ |
+| m12/m12-lighthouse.png | 12 | Lighthouse / axe panel | manual | ⬜ |
+| m13/m13-01-automated-pr-deploy.png | 13 | MCP-driven PR merged + auto-deploy | auto (MCP) | ✅ |
+| m13/m13-mcp-list.png | 13 | `claude mcp list` | manual | ✅ |
+| m13/m13-skill-install.png | 13 | SKILL.md / skill install | manual | ⬜ |
+| m13/m13-plugin-install.png | 13 | `/plugin install` | manual | ⬜ |
+| m14/m14-architecture-summary.png | 14 | AI architecture summary + file tree of the brownfield repo | manual | ⬜ |
+
+**Bonus — Module 1–2 lesson figures (live AI session, not from the reference app):**
+`m01/m01-same-prompt-twice.png`, `m01/m01-hallucination.png`, `m02/m02-weak-vs-strong.png`, `m02/m02-refinement.png` — all manual.
+
+_Archived: `_alt/` holds three raw plan-mode captures (extra scroll positions of the Module 5 plan)._
