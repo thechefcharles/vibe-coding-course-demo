@@ -36,6 +36,7 @@ captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
 | m09/m09-vercel-import.png | 9 | Vercel import (New Project) screen | auto (browser-driven) | ✅ |
 | m09/m09-vercel-env.png | 9 | Vercel env vars settings | auto (browser-driven) | ✅ |
 | m09/m09-vercel-deployments.png | 9 | Vercel deployments / CI/CD history | auto (browser-driven) | ✅ |
+| m09/m09-vercel-preview-link.png | 9 | PR #2 Vercel preview deployment link | auto (browser-driven) | ✅ |
 | m09-supabase-prod-auth-urls.png | 9 | Supabase prod auth URLs | manual | ⬜ |
 | m11/m11-01-loading.png | 11 | /clients?state=loading skeleton | auto | ✅ |
 | m11/m11-02-empty.png | 11 | /clients?state=empty friendly empty | auto | ✅ |
