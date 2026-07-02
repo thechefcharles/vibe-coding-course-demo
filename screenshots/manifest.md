@@ -23,19 +23,19 @@ captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
 | m05-claude-multifile-diff.png | 5 | multi-file diff | manual | ⬜ |
 | m06/m06-01-signed-out.png | 6 | app signed-out view (login page) | auto | ✅ |
 | m06/m06-02-signed-in-clients.png | 6 | app signed-in /clients (live data) | auto | ✅ |
-| m06-supabase-api-keys.png | 6 | Supabase API keys | manual | ⬜ |
-| m06-supabase-table-editor.png | 6 | Supabase Table Editor | manual | ⬜ |
-| m06-supabase-auth-users.png | 6 | Supabase Auth users | manual | ⬜ |
-| m06-supabase-rls-policy.png | 6 | an RLS policy | manual | ⬜ |
+| m06/m06-supabase-api-keys.png | 6 | Supabase API keys | auto (browser-driven) | ✅ |
+| m06/m06-supabase-table-editor.png | 6 | Supabase Table Editor (clients rows) | auto (browser-driven) | ✅ |
+| m06/m06-supabase-auth-users.png | 6 | Supabase Auth users | auto (browser-driven) | ✅ |
+| m06/m06-supabase-rls-policy.png | 6 | RLS policies (clients + invoices) | auto (browser-driven) | ✅ |
 | m07/m07-01-error-overlay.png | 7 | Next.js dev error overlay | auto | ✅ |
 | m07-debugging-chat.png | 7 | a debugging chat | manual | ⬜ |
 | m08/m08-01-github-repo.png | 8 | GitHub repo (public) | auto | ✅ |
 | m08/m08-02-pr-diff.png | 8 | PR #1 files-changed diff | auto | ✅ |
 | m08-merge-conflict.png | 8 | a merge conflict in the editor | manual | ⬜ |
 | m09/m09-01-live-clients.png | 9 | live /clients on the public Vercel URL | auto | ✅ |
-| m09-vercel-import.png | 9 | Vercel import screen | manual | ⬜ |
-| m09-vercel-env.png | 9 | Vercel env vars settings | manual | ⬜ |
-| m09-vercel-preview-link.png | 9 | PR preview link | manual | ⬜ |
+| m09-vercel-import.png | 9 | Vercel import screen | browser-driven (deferred: Vercel login rate-limited) | ⬜ |
+| m09-vercel-env.png | 9 | Vercel env vars settings | browser-driven (deferred: Vercel login rate-limited) | ⬜ |
+| m09-vercel-preview-link.png | 9 | PR preview link | browser-driven (deferred: Vercel login rate-limited) | ⬜ |
 | m09-supabase-prod-auth-urls.png | 9 | Supabase prod auth URLs | manual | ⬜ |
 | m11/m11-01-loading.png | 11 | /clients?state=loading skeleton | auto | ✅ |
 | m11/m11-02-empty.png | 11 | /clients?state=empty friendly empty | auto | ✅ |
