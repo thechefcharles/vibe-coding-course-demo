@@ -51,7 +51,7 @@ Three capture tiers:
 | m12/m12-02-empty.png | 12 | /clients?state=empty | auto (Playwright) | ✅ |
 | m12/m12-03-error.png | 12 | /clients?state=error + retry | auto (Playwright) | ✅ |
 | m12/m12-04-tests.txt | 12 | unit + E2E test run output | auto | ✅ |
-| m12/m12-lighthouse.png | 12 | Lighthouse / axe panel | manual | ⬜ |
+| m12/m12-lighthouse.png | 12 | Lighthouse / axe panel | manual | ✅ |
 | m13/m13-01-automated-pr-deploy.png | 13 | MCP-driven PR merged + auto-deploy | auto (MCP) | ✅ |
 | m13/m13-mcp-list.png | 13 | `claude mcp list` | manual | ✅ |
 | m13/m13-skill-install.png | 13 | SKILL.md / skill install | manual | ✅ |
