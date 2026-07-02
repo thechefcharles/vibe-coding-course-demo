@@ -10,7 +10,8 @@ Three capture tiers:
 | m00/m00-01-nextjs-starter.png | 0 | Next.js starter at localhost:3000 | auto (Playwright) | ✅ |
 | m00/m00-terminal-versions.png | 0 | terminal version checks (node/npm/git) | manual | ✅ |
 | m00/m00-cursor-welcome.png | 0 | Cursor welcome screen | manual | ✅ |
-| m02/m02-image-prompt.png | 2 | a mockup pasted into Claude Code/Cursor + the generated UI | manual | ⬜ |
+| m02/m02-mockup-source.png | 2 | the UI mockup handed to the AI (pairs with m02-image-prompt) | asset | ✅ |
+| m02/m02-image-prompt.png | 2 | AI recreating the mockup as code (image → code) | manual | ✅ |
 | m04/m04-01-clients-table.png | 4 | /clients table (mock rows) | auto (Playwright) | ✅ |
 | m04/m04-02-create-form.png | 4 | /clients/new create form | auto (Playwright) | ✅ |
 | m04/m04-cursor-cmdk-diff.png | 4 | Cursor Cmd+K inline diff | manual | ✅ |
