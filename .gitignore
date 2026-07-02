@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# claude "remember" plugin (session state, not app code)
+/.remember/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
