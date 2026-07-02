@@ -32,7 +32,7 @@ captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
 | m08-github-repo.png | 8 | GitHub repo | manual | ⬜ |
 | m08-github-pr-diff.png | 8 | a pull request diff | manual | ⬜ |
 | m08-merge-conflict.png | 8 | a merge conflict in the editor | manual | ⬜ |
-| m09/m09-01-live-clients.png | 9 | live /clients on the public Vercel URL | auto (after deploy) | ⬜ |
+| m09/m09-01-live-clients.png | 9 | live /clients on the public Vercel URL | auto | ✅ |
 | m09-vercel-import.png | 9 | Vercel import screen | manual | ⬜ |
 | m09-vercel-env.png | 9 | Vercel env vars settings | manual | ⬜ |
 | m09-vercel-preview-link.png | 9 | PR preview link | manual | ⬜ |
