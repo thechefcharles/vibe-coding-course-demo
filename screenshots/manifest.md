@@ -10,11 +10,13 @@ Three capture tiers:
 | m00/m00-01-nextjs-starter.png | 0 | Next.js starter at localhost:3000 | auto (Playwright) | ✅ |
 | m00/m00-terminal-versions.png | 0 | terminal version checks (node/npm/git) | manual | ✅ |
 | m00/m00-cursor-welcome.png | 0 | Cursor welcome screen | manual | ⬜ |
+| m02/m02-image-prompt.png | 2 | a mockup pasted into Claude Code/Cursor + the generated UI | manual | ⬜ |
 | m04/m04-01-clients-table.png | 4 | /clients table (mock rows) | auto (Playwright) | ✅ |
 | m04/m04-02-create-form.png | 4 | /clients/new create form | auto (Playwright) | ✅ |
 | m04/m04-cursor-cmdk-diff.png | 4 | Cursor Cmd+K inline diff | manual | ⬜ |
 | m04/m04-cursor-at-mention.png | 4 | Cursor @-mention menu | manual | ⬜ |
 | m04/m04-cursor-composer-diff.png | 4 | Cursor Composer multi-file diff | manual | ⬜ |
+| m04/m04-cursor-agent-mode.png | 4 | Cursor Agent mode running / destructive-command approval prompt | manual | ⬜ |
 | m05/m05-01-invoices-table.png | 5 | /invoices list (mock) | auto (Playwright) | ✅ |
 | m05/m05-02-invoice-form.png | 5 | /invoices/new form | auto (Playwright) | ✅ |
 | m05/m05-claude-welcome.png | 5 | Claude Code welcome in terminal | manual | ✅ |
@@ -25,6 +27,8 @@ Three capture tiers:
 | m06/m06-01-clients-styled.png | 6 | styled /clients (desktop) | auto (Playwright) | ✅ |
 | m06/m06-02-clients-mobile.png | 6 | /clients at 375px (responsive) | auto (Playwright) | ✅ |
 | m06/m06-03-invoices-mobile.png | 6 | /invoices at 375px (responsive) | auto (Playwright) | ✅ |
+| m06/m06-claude-design-home.png | 6 | Claude Design "What will you design today?" home | manual | ⬜ |
+| m06/m06-claude-design-prototype.png | 6 | a Claude Design generated prototype | manual | ⬜ |
 | m07/m07-01-signed-out.png | 7 | app signed-out (login page) | auto (Playwright) | ✅ |
 | m07/m07-02-signed-in-clients.png | 7 | signed-in /clients (live data) | auto (Playwright) | ✅ |
 | m07/m07-supabase-api-keys.png | 7 | Supabase API keys | auto (MCP) | ✅ |
@@ -52,6 +56,7 @@ Three capture tiers:
 | m13/m13-mcp-list.png | 13 | `claude mcp list` | manual | ✅ |
 | m13/m13-skill-install.png | 13 | SKILL.md / skill install | manual | ⬜ |
 | m13/m13-plugin-install.png | 13 | `/plugin install` | manual | ⬜ |
+| m13/m13-notion-checklist.png | 13 | a Notion feature-checklist page (Notion MCP) | manual | ⬜ |
 | m14/m14-architecture-summary.png | 14 | AI architecture summary + file tree of the brownfield repo | manual | ⬜ |
 
 **Bonus — Module 1–2 lesson figures (live AI session, not from the reference app):**

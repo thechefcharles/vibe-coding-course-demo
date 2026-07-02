@@ -23,11 +23,19 @@ Save into the module folder with the exact filename below.
 - [ ] `m04/m04-cursor-composer-diff.png` — Composer (⌘I) multi-file diff
 - [ ] `m05/m05-claude-md.png` — the repo's `CLAUDE.md` open in the editor
 - [ ] `m09/m09-merge-conflict.png` — a merge conflict open in the editor
+- [ ] `m04/m04-cursor-agent-mode.png` — Cursor Agent mode running / the destructive-command approval prompt
 
 **Live AI session / tooling**
 - [ ] `m08/m08-debugging-chat.png` — paste an error, AI explains/fixes it
 - [ ] `m12/m12-lighthouse.png` — Lighthouse or axe accessibility/perf panel
 - [ ] `m14/m14-architecture-summary.png` — AI architecture summary + file tree of the brownfield repo
+
+**v2.1 additions (images, Claude Design, Notion MCP)**
+- [ ] `m02/m02-image-prompt.png` — a mockup image pasted into Claude Code/Cursor + the UI it generated
+- [ ] `m06/m06-claude-design-home.png` — Claude Design "What will you design today?" home (you may already have this)
+- [ ] `m06/m06-claude-design-prototype.png` — a Claude Design generated prototype
+- [ ] `m13/m13-notion-checklist.png` — a Notion feature-checklist page (Notion MCP)
+- Note: retake `m13/m13-mcp-list.png` after adding Notion so the list shows **notion** connected too.
 
 **Module 1–2 lesson figures (live AI session)**
 - [ ] `m01/m01-same-prompt-twice.png` — same prompt twice, two outputs
