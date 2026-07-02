@@ -46,4 +46,4 @@ captured by hand — see `../SCREENSHOTS.md` for the capture checklist.
 | m12-mcp-list.png | 12 | `claude mcp list` | manual | ⬜ |
 | m12-skill-install.png | 12 | SKILL.md / skill install | manual | ⬜ |
 | m12-plugin-install.png | 12 | `/plugin install` | manual | ⬜ |
-| m12-automated-pr-deploy.png | 12 | an automated PR/deploy | manual | ⬜ |
+| m12/m12-01-automated-pr-deploy.png | 12 | MCP-driven PR #3 merged + auto-deploy | auto (browser-driven) | ✅ |
