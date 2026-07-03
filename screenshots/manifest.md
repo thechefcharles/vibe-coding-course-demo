@@ -28,8 +28,8 @@ Three capture tiers:
 | m06/m06-01-clients-styled.png | 6 | styled /clients (desktop) | auto (Playwright) | ✅ |
 | m06/m06-02-clients-mobile.png | 6 | /clients at 375px (responsive) | auto (Playwright) | ✅ |
 | m06/m06-03-invoices-mobile.png | 6 | /invoices at 375px (responsive) | auto (Playwright) | ✅ |
-| m06/m06-claude-design-home.png | 6 | Claude Design "What will you design today?" home | manual | ⬜ |
-| m06/m06-claude-design-prototype.png | 6 | a Claude Design generated prototype | manual | ⬜ |
+| m06/m06-claude-design-home.png | 6 | Claude Design "What will you design today?" home | manual | ✅ |
+| m06/m06-claude-design-prototype.png | 6 | a Claude Design generated prototype | manual | ✅ |
 | m07/m07-01-signed-out.png | 7 | app signed-out (login page) | auto (Playwright) | ✅ |
 | m07/m07-02-signed-in-clients.png | 7 | signed-in /clients (live data) | auto (Playwright) | ✅ |
 | m07/m07-supabase-api-keys.png | 7 | Supabase API keys | auto (MCP) | ✅ |
