@@ -10,8 +10,13 @@ Three capture tiers:
 | m00/m00-01-nextjs-starter.png | 0 | Next.js starter at localhost:3000 | auto (Playwright) | ✅ |
 | m00/m00-terminal-versions.png | 0 | terminal version checks (node/npm/git) | manual | ✅ |
 | m00/m00-cursor-welcome.png | 0 | Cursor welcome screen | manual | ✅ |
+| m01/m01-same-prompt-twice.png | 1 | same prompt run twice → two different outputs (nondeterminism) | manual | ✅ |
+| m01/m01-hallucination.png | 1 | illustrative confident hallucination (fake `chunk()`), labeled as an example | manual | ✅ |
 | m02/m02-mockup-source.png | 2 | the UI mockup handed to the AI (pairs with m02-image-prompt) | asset | ✅ |
 | m02/m02-image-prompt.png | 2 | AI recreating the mockup as code (image → code) | manual | ✅ |
+| m02/m02-weak-vs-strong-1-weak.png | 2 | weak prompt output (pairs with the strong one) | manual | ✅ |
+| m02/m02-weak-vs-strong-2-strong.png | 2 | strong/detailed prompt → fuller, accessible output | manual | ✅ |
+| m02/m02-refinement.png | 2 | flawed output → feedback → fixed (iterate with the AI) | manual | ✅ |
 | m04/m04-01-clients-table.png | 4 | /clients table (mock rows) | auto (Playwright) | ✅ |
 | m04/m04-02-create-form.png | 4 | /clients/new create form | auto (Playwright) | ✅ |
 | m04/m04-cursor-cmdk-diff.png | 4 | Cursor Cmd+K inline diff | manual | ✅ |
@@ -60,7 +65,8 @@ Three capture tiers:
 | m13/m13-notion-checklist.png | 13 | a Notion feature-checklist page (Notion MCP) | manual | ✅ |
 | m14/m14-architecture-summary.png | 14 | AI architecture summary + file tree of the brownfield repo | manual | ✅ |
 
-**Bonus — Module 1–2 lesson figures (live AI session, not from the reference app):**
-`m01/m01-same-prompt-twice.png`, `m01/m01-hallucination.png`, `m02/m02-weak-vs-strong.png`, `m02/m02-refinement.png` — all manual.
+**Module 1–2 lesson figures** are now captured and in the table above (live-AI sessions).
+The `m01-hallucination` shot is a clearly-labeled *illustration* (no real model would confidently
+invent `Array.prototype.chunk()` — Opus and Haiku both correctly flagged it).
 
 _Archived: `_alt/` holds three raw plan-mode captures (extra scroll positions of the Module 5 plan)._
